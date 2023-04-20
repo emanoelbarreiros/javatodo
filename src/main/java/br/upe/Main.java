@@ -1,5 +1,18 @@
-package br.upe;public class Main {
+package br.upe;
+
+import br.upe.ui.TelaPrincipal;
+
+import javax.swing.*;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        TelaPrincipal pnlMain = new TelaPrincipal();
+
+        JFrame frame = new JFrame("ToDo");
+        frame.setContentPane(pnlMain.getPnlMain());
+        frame.pack();
+        frame.setVisible(true);
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 }
