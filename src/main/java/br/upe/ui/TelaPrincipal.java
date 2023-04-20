@@ -40,7 +40,6 @@ public class TelaPrincipal {
 
     private void adicionarTarefa(String texto) {
         Tarefa tarefa = new Tarefa(texto, tarefas.size());
-        //tarefas.add(tarefa);
         controlador.adicionarTarefaAtiva(tarefa);
         tblTarefas.revalidate();
         tblTarefas.repaint();
